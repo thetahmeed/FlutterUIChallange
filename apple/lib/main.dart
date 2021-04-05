@@ -38,13 +38,14 @@ class _HomePageState extends State<HomePage> {
                 alignment: Alignment.center,
                 child: Image.asset(
                   'assets/images/watch.png',
-                  height: 380,
+                  height: MediaQuery.of(context).size.height / 2,
                 ),
               ),
               SizedBox(height: 20),
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Stack(
+                  alignment: Alignment.bottomCenter,
                   clipBehavior: Clip.none,
                   children: [
                     Container(
@@ -63,7 +64,7 @@ class _HomePageState extends State<HomePage> {
                         ),
                       ),
                       width: MediaQuery.of(context).size.width,
-                      height: 300,
+                      height: MediaQuery.of(context).size.height / 3,
                       child: Padding(
                         padding: const EdgeInsets.all(38.0),
                         child: Column(
@@ -107,8 +108,7 @@ class _HomePageState extends State<HomePage> {
                       ),
                     ),
                     Positioned(
-                      top: 265,
-                      left: 150,
+                      bottom: -20,
                       child: FloatingActionButton(
                         backgroundColor: Colors.white,
                         onPressed: () {},
