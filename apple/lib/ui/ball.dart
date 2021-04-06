@@ -88,15 +88,14 @@ class _BallPageState extends State<BallPage> {
                             ),
                             SizedBox(height: 20),
                             Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
-                                Expanded(
-                                  child: Text(
-                                    '3 Comments',
-                                    style: TextStyle(
-                                      color: Colors.cyan,
-                                      fontSize: 22,
-                                      fontWeight: FontWeight.bold,
-                                    ),
+                                Text(
+                                  '3 Comments',
+                                  style: TextStyle(
+                                    color: Colors.cyan,
+                                    fontSize: 22,
+                                    fontWeight: FontWeight.bold,
                                   ),
                                 ),
                                 IconButton(
@@ -172,12 +171,16 @@ class _BallPageState extends State<BallPage> {
                     ],
                   ),
                 ),
-                SizedBox(height: 20),
+                SizedBox(height: 30),
                 Align(
                   alignment: Alignment.center,
-                  child: CircleAvatar(
+                  child: FloatingActionButton(
                     backgroundColor: Colors.white,
-                    child: Icon(Icons.add),
+                    onPressed: () {},
+                    child: Icon(
+                      Icons.add,
+                      color: Colors.cyan,
+                    ),
                   ),
                 ),
               ],
