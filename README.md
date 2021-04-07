@@ -13,7 +13,6 @@
 <h1>Cat:</h1>
 <br/>
 <img src="https://github.com/thetahmeed/FlutterUIChallange/blob/main/apple/cat_a.png" height="680">
-<br/>
 <img src="https://github.com/thetahmeed/FlutterUIChallange/blob/main/apple/cat_b.png" height="680">
 <br/>
 
