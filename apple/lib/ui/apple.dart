@@ -89,7 +89,7 @@ class _HomePageState extends State<HomePage> {
                       ),
                     ),
                     Positioned(
-                      bottom: -20,
+                      bottom: -25,
                       child: FloatingActionButton(
                         backgroundColor: Colors.white,
                         onPressed: () {},

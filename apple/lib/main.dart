@@ -1,3 +1,4 @@
+import 'package:apple/ui/apple.dart';
 import 'package:apple/ui/ball.dart';
 import 'package:apple/ui/cat.dart';
 import 'package:flutter/material.dart';
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: CatPage(),
+      home: HomePage(),
       debugShowCheckedModeBanner: false,
     );
   }
