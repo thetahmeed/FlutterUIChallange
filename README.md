@@ -1,5 +1,6 @@
 # FlutterUIChallange
 // let's try to design some awesome ui
+<center>
 </br>
 Apple:
 </br>
@@ -15,3 +16,4 @@ Cat:
 </br>
 <img src="https://github.com/thetahmeed/FlutterUIChallange/blob/main/apple/cat_b.png" height="680">
 </br>
+</center>
