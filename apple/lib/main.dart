@@ -1,6 +1,7 @@
 import 'package:apple/ui/apple.dart';
 import 'package:apple/ui/ball.dart';
 import 'package:apple/ui/cat.dart';
+import 'package:apple/ui/dog.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: HomePage(),
+      home: DogPage(),
       debugShowCheckedModeBanner: false,
     );
   }
