@@ -3,7 +3,8 @@
 
 <br/>
 <h1>Apple:</h1>
-<img src="https://raw.githubusercontent.com/thetahmeed/FlutterUIChallange/main/apple/apple.png" height="680" onClick="htttp://example.com">
+<a href="htttp://example.com">
+<img src="https://raw.githubusercontent.com/thetahmeed/FlutterUIChallange/main/apple/apple.png" height="680"> </a>
 <h1>Ball:</h1>
 <img src="https://raw.githubusercontent.com/thetahmeed/FlutterUIChallange/main/apple/ball.png" height="680">
 <h1>Cat:</h1>
