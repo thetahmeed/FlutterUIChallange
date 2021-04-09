@@ -3,15 +3,15 @@
 
 <br/>
 <h1>Apple:</h1>
-<img src="https://raw.githubusercontent.com/thetahmeed/FlutterUIChallange/main/apple/apple.png" height="680">
+<img src="https://raw.githubusercontent.com/thetahmeed/FlutterUIChallange/main/apple/apple.png" height="200">
 <h1>Ball:</h1>
-<img src="https://raw.githubusercontent.com/thetahmeed/FlutterUIChallange/main/apple/ball.png" height="680">
+<img src="https://raw.githubusercontent.com/thetahmeed/FlutterUIChallange/main/apple/ball.png" height="200">
 <h1>Cat:</h1>
-<img src="https://github.com/thetahmeed/FlutterUIChallange/blob/main/apple/cat_a.png" height="680">
-<img src="https://github.com/thetahmeed/FlutterUIChallange/blob/main/apple/cat_b.png" height="680">
+<img src="https://github.com/thetahmeed/FlutterUIChallange/blob/main/apple/cat_a.png" height="200">
+<img src="https://github.com/thetahmeed/FlutterUIChallange/blob/main/apple/cat_b.png" height="200">
 <h1>Dog:</h1>
-<img src="https://github.com/thetahmeed/FlutterUIChallange/blob/main/apple/dog.png" height="680">
+<img src="https://github.com/thetahmeed/FlutterUIChallange/blob/main/apple/dog.png" height="200">
 <h1>Egg:</h1>
-<img src="https://raw.githubusercontent.com/thetahmeed/FlutterUIChallange/main/apple/egg_a.png" height="680">
-<img src="https://raw.githubusercontent.com/thetahmeed/FlutterUIChallange/main/apple/egg_b.png" height="680">
+<img src="https://raw.githubusercontent.com/thetahmeed/FlutterUIChallange/main/apple/egg_a.png" height="200">
+<img src="https://raw.githubusercontent.com/thetahmeed/FlutterUIChallange/main/apple/egg_b.png" height="200">
 
