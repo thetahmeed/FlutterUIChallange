@@ -1,17 +1,15 @@
 # FlutterUIChallange
 // let's try to design some awesome ui
 
-<br/>
-<h1>Apple:</h1>
+Apple:
 <img src="https://raw.githubusercontent.com/thetahmeed/FlutterUIChallange/main/apple/apple.png" height="200">
-<h1>Ball:</h1>
+Ball:
 <img src="https://raw.githubusercontent.com/thetahmeed/FlutterUIChallange/main/apple/ball.png" height="200">
-<h1>Cat:</h1>
+Cat:
 <img src="https://github.com/thetahmeed/FlutterUIChallange/blob/main/apple/cat_a.png" height="200">
 <img src="https://github.com/thetahmeed/FlutterUIChallange/blob/main/apple/cat_b.png" height="200">
-<h1>Dog:</h1>
+Dog:
 <img src="https://github.com/thetahmeed/FlutterUIChallange/blob/main/apple/dog.png" height="200">
-<h1>Egg:</h1>
+Egg:
 <img src="https://raw.githubusercontent.com/thetahmeed/FlutterUIChallange/main/apple/egg_a.png" height="200">
 <img src="https://raw.githubusercontent.com/thetahmeed/FlutterUIChallange/main/apple/egg_b.png" height="200">
-
