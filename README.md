@@ -1,15 +1,22 @@
 # FlutterUIChallange
 // let's try to design some awesome ui
 
+Apple:
 <img src="https://raw.githubusercontent.com/thetahmeed/FlutterUIChallange/main/apple/apple.png" height="400">
-<a href="https://github.com/thetahmeed/FlutterUIChallange/blob/9933ab2871e16d0f1af933533fe612422681b589/apple/lib/ui/apple.dart">View code</a>
+Ball:
 <img src="https://raw.githubusercontent.com/thetahmeed/FlutterUIChallange/main/apple/ball.png" height="400">
-<a href="https://github.com/thetahmeed/FlutterUIChallange/blob/9933ab2871e16d0f1af933533fe612422681b589/apple/lib/ui/ball.dart">View code</a>
+Cat:
 <img src="https://github.com/thetahmeed/FlutterUIChallange/blob/main/apple/cat_a.png" height="400">
 <img src="https://github.com/thetahmeed/FlutterUIChallange/blob/main/apple/cat_b.png" height="400">
-<a href="https://github.com/thetahmeed/FlutterUIChallange/blob/9933ab2871e16d0f1af933533fe612422681b589/apple/lib/ui/cat.dart">View code</a>
+Dog:
 <img src="https://github.com/thetahmeed/FlutterUIChallange/blob/main/apple/dog.png" height="400">
-<a href="https://github.com/thetahmeed/FlutterUIChallange/blob/9933ab2871e16d0f1af933533fe612422681b589/apple/lib/ui/dog.dart">View code</a>
+Egg:
 <img src="https://raw.githubusercontent.com/thetahmeed/FlutterUIChallange/main/apple/egg_a.png" height="400">
 <img src="https://raw.githubusercontent.com/thetahmeed/FlutterUIChallange/main/apple/egg_b.png" height="400">
-<a href="https://github.com/thetahmeed/FlutterUIChallange/blob/main/apple/lib/ui/egg.dart">View code</a>
+
+<br/>
+1. <a href="https://github.com/thetahmeed/FlutterUIChallange/blob/9933ab2871e16d0f1af933533fe612422681b589/apple/lib/ui/apple.dart">View code</a> of Apple.
+2. <a href="https://github.com/thetahmeed/FlutterUIChallange/blob/9933ab2871e16d0f1af933533fe612422681b589/apple/lib/ui/ball.dart">View code</a> of Ball.
+3. <a href="https://github.com/thetahmeed/FlutterUIChallange/blob/9933ab2871e16d0f1af933533fe612422681b589/apple/lib/ui/cat.dart">View code</a> od Cat
+4. <a href="https://github.com/thetahmeed/FlutterUIChallange/blob/9933ab2871e16d0f1af933533fe612422681b589/apple/lib/ui/dog.dart">View code</a> of Dog
+5. <a href="https://github.com/thetahmeed/FlutterUIChallange/blob/main/apple/lib/ui/egg.dart">View code</a> of Egg.
