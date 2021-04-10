@@ -1,9 +1,11 @@
 import 'dart:ui';
 
+import 'package:apple/ui/fan.dart';
 import 'package:flutter/material.dart';
 
 class Utils {
-  Widget appBar() {
+  // First page widget
+  Widget appBar(BuildContext context) {
     return Row(
       children: [
         Container(
@@ -27,7 +29,12 @@ class Utils {
               ),
             ],
           ),
-          child: Icon(Icons.menu_rounded),
+          child: GestureDetector(
+              onTap: () {
+                Navigator.push(
+                    context, MaterialPageRoute(builder: (_) => SongsList()));
+              },
+              child: Icon(Icons.menu_rounded)),
         ),
         Expanded(child: Text('Liked songs', textAlign: TextAlign.center)),
         Container(
@@ -280,6 +287,136 @@ class Utils {
           Icon(Icons.equalizer_rounded),
           Icon(Icons.share_rounded),
         ],
+      ),
+    );
+  }
+
+  // Second page widget
+  Widget listAppBar(BuildContext context) {
+    return Row(
+      children: [
+        Container(
+          margin: EdgeInsets.symmetric(horizontal: 8),
+          padding: EdgeInsets.all(10.0),
+          decoration: BoxDecoration(
+            color: Color(0xFFF4EFF6),
+            borderRadius: BorderRadius.circular(100.0),
+            boxShadow: [
+              BoxShadow(
+                color: Color.fromRGBO(0, 0, 0, 0.1),
+                spreadRadius: 3,
+                blurRadius: 6,
+                offset: Offset(6, 2),
+              ),
+              BoxShadow(
+                color: Color.fromRGBO(255, 255, 255, 1),
+                spreadRadius: 3,
+                blurRadius: 6,
+                offset: Offset(-6, -2),
+              ),
+            ],
+          ),
+          child: GestureDetector(
+              onTap: () {
+                Navigator.pop(context);
+              },
+              child: Icon(Icons.chevron_left_rounded)),
+        ),
+        Expanded(
+          child: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Text('Now playing, \'Try to read my scilence\'',
+                textAlign: TextAlign.center),
+          ),
+        ),
+        Container(
+          margin: EdgeInsets.symmetric(horizontal: 8),
+          padding: EdgeInsets.all(10.0),
+          decoration: BoxDecoration(
+            color: Color(0xFFF4EFF6),
+            borderRadius: BorderRadius.circular(100.0),
+            boxShadow: [
+              BoxShadow(
+                color: Color.fromRGBO(0, 0, 0, 0.1),
+                spreadRadius: 3,
+                blurRadius: 6,
+                offset: Offset(6, 2),
+              ),
+              BoxShadow(
+                color: Color.fromRGBO(255, 255, 255, 1),
+                spreadRadius: 3,
+                blurRadius: 6,
+                offset: Offset(-6, -2),
+              ),
+            ],
+          ),
+          child: GestureDetector(
+              onTap: () {
+                Navigator.pop(context);
+              },
+              child: Icon(Icons.pause_rounded)),
+        ),
+        SizedBox(width: 18),
+      ],
+    );
+  }
+
+  Widget listBody() {
+    return Expanded(
+      child: ListView(
+        physics: BouncingScrollPhysics(),
+        children: [
+          singleSong('Favorite Place', 'Mike Ruekberg'),
+          singleSong('Fireworks', 'Botanica'),
+          singleSong('Dead Prophet', 'Botanica'),
+          singleSong('The Dying Art', 'Mike Ruekberg'),
+          singleSong('Things I See', 'Karmadelic'),
+          singleSong('End of the Party', 'Mike Ruekberg'),
+          singleSong('Earth Star', 'Karmadelic'),
+          singleSong('Born to Fly', 'Mike Ruekberg'),
+          singleSong('Years', 'Mike Ruekberg'),
+          singleSong('Let\'s Go', 'Botanica'),
+          singleSong('Favorite Place', 'Mike Ruekberg'),
+          singleSong('Fireworks', 'Botanica'),
+          singleSong('Dead Prophet', 'Botanica'),
+          singleSong('The Dying Art', 'Mike Ruekberg'),
+          singleSong('Things I See', 'Karmadelic'),
+          singleSong('End of the Party', 'Mike Ruekberg'),
+          singleSong('Earth Star', 'Karmadelic'),
+          singleSong('Born to Fly', 'Mike Ruekberg'),
+          singleSong('Years', 'Mike Ruekberg'),
+          singleSong('Let\'s Go', 'Botanica'),
+        ],
+      ),
+    );
+  }
+
+  Widget singleSong(String title, String singer) {
+    return ListTile(
+      title: Text(title),
+      subtitle: Text(singer),
+      trailing: Container(
+        margin: EdgeInsets.symmetric(horizontal: 8),
+        padding: EdgeInsets.all(10.0),
+        decoration: BoxDecoration(
+          color: Color(0xFFF4EFF6),
+          borderRadius: BorderRadius.circular(100.0),
+          boxShadow: [
+            BoxShadow(
+              color: Color.fromRGBO(0, 0, 0, 0.1),
+              spreadRadius: 3,
+              blurRadius: 6,
+              offset: Offset(6, 2),
+            ),
+            BoxShadow(
+              color: Color.fromRGBO(255, 255, 255, 1),
+              spreadRadius: 3,
+              blurRadius: 6,
+              offset: Offset(-6, -2),
+            ),
+          ],
+        ),
+        child: Icon(Icons.play_arrow_rounded),
       ),
     );
   }
