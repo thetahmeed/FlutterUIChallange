@@ -23,7 +23,7 @@ List<Product> products = [
     size: 10,
     description: descriptionText,
     color: Color(0xFF3D82AE),
-    name: 'Awesome Bag',
+    name: 'Awesome Tee',
   ),
   Product(
     id: 1,
@@ -32,7 +32,7 @@ List<Product> products = [
     size: 10,
     description: descriptionText,
     color: Color(0xFF3D82AE),
-    name: 'Awesome Bag',
+    name: 'Awesome Tee',
   ),
   Product(
     id: 2,
@@ -41,7 +41,7 @@ List<Product> products = [
     size: 10,
     description: descriptionText,
     color: Color(0xFF3D82AE),
-    name: 'Awesome Bag',
+    name: 'Awesome Tee',
   ),
   Product(
     id: 3,
@@ -50,7 +50,7 @@ List<Product> products = [
     size: 10,
     description: descriptionText,
     color: Color(0xFF3D82AE),
-    name: 'Awesome Bag',
+    name: 'Awesome Tee',
   ),
   Product(
     id: 4,
@@ -59,7 +59,7 @@ List<Product> products = [
     size: 10,
     description: descriptionText,
     color: Color(0xFF3D82AE),
-    name: 'Awesome Bag',
+    name: 'Awesome Tee',
   ),
 ];
 
