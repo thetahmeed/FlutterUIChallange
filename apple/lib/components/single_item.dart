@@ -14,31 +14,34 @@ class mSingleItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Expanded(
-          child: Container(
-            padding: EdgeInsets.all(cPadding),
-            decoration: BoxDecoration(
-              color: product.color,
-              borderRadius: BorderRadius.circular(16),
+    return GestureDetector(
+      onTap: press,
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Expanded(
+            child: Container(
+              padding: EdgeInsets.all(cPadding),
+              decoration: BoxDecoration(
+                color: product.color,
+                borderRadius: BorderRadius.circular(16),
+              ),
+              child: Image.network(product.image),
             ),
-            child: Image.network(product.image),
           ),
-        ),
-        Padding(
-          padding: EdgeInsets.symmetric(vertical: cPadding / 4),
-          child: Text(
-            product.name,
-            style: TextStyle(color: cTextLightColor),
+          Padding(
+            padding: EdgeInsets.symmetric(vertical: cPadding / 4),
+            child: Text(
+              product.name,
+              style: TextStyle(color: cTextLightColor),
+            ),
           ),
-        ),
-        Text(
-          '\$${product.price}',
-          style: TextStyle(fontWeight: FontWeight.bold),
-        )
-      ],
+          Text(
+            '\$${product.price}',
+            style: TextStyle(fontWeight: FontWeight.bold),
+          )
+        ],
+      ),
     );
   }
 }
