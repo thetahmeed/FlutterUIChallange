@@ -33,24 +33,72 @@ class theColorAndSize extends StatelessWidget {
           ),
         ),
         Expanded(
-          child: RichText(
-            text: TextSpan(
-              style: TextStyle(color: cTextColor),
-              children: [
-                TextSpan(text: 'Size\n'),
-                TextSpan(
-                  //text: '${product.size}' + ' cm',
-                  text: 'XL',
-                  style: Theme.of(context)
-                      .textTheme
-                      .headline5
-                      .copyWith(fontWeight: FontWeight.bold),
-                ),
-              ],
-            ),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text('Size'),
+              Row(
+                children: [
+                  theSize(
+                    product: product,
+                    size: 'XL',
+                    isSelected: true,
+                  ),
+                  theSize(
+                    product: product,
+                    size: 'L',
+                    isSelected: false,
+                  ),
+                  theSize(
+                    product: product,
+                    size: 'M',
+                    isSelected: false,
+                  ),
+                  theSize(
+                    product: product,
+                    size: 'S',
+                    isSelected: false,
+                  ),
+                ],
+              ),
+            ],
           ),
         )
       ],
+    );
+  }
+}
+
+class theSize extends StatelessWidget {
+  final String size;
+  final bool isSelected;
+
+  const theSize({
+    Key key,
+    this.size,
+    this.isSelected,
+    @required this.product,
+  }) : super(key: key);
+
+  final Product product;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      alignment: Alignment.center,
+      height: 26,
+      width: 26,
+      margin: EdgeInsets.only(top: cPadding / 4, right: cPadding / 2),
+      padding: EdgeInsets.all(2.5),
+      decoration: BoxDecoration(
+        border:
+            Border.all(color: isSelected ? product.color : Colors.transparent),
+        borderRadius: BorderRadius.circular(5),
+      ),
+      child: Text(
+        size,
+        style: TextStyle(fontWeight: FontWeight.bold),
+      ),
     );
   }
 }
