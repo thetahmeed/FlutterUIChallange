@@ -35,11 +35,13 @@ class Body extends StatelessWidget {
               itemBuilder: (context, index) => mSingleItem(
                 product: products[index],
                 press: () => Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) => DetailsPage(
-                              product: products[index],
-                            ))),
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => DetailsPage(
+                      product: products[index],
+                    ),
+                  ),
+                ),
               ),
             ),
           ),
