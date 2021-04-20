@@ -26,7 +26,8 @@ class mSingleItem extends StatelessWidget {
                 color: product.color,
                 borderRadius: BorderRadius.circular(16),
               ),
-              child: Image.network(product.image),
+              child: Hero(
+                  tag: '${product.id}', child: Image.network(product.image)),
             ),
           ),
           Padding(
