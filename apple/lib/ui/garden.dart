@@ -11,6 +11,7 @@ class _GardenPageState extends State<GardenPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: mAppBar(),
       body: Body(),
     );
