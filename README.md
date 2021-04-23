@@ -29,3 +29,14 @@ Garden:
 5. <a href="https://github.com/thetahmeed/FlutterUIChallange/blob/main/apple/lib/ui/egg.dart">View code</a> of Egg.<br/>
 6. <a href="https://github.com/thetahmeed/FlutterUIChallange/blob/main/apple/lib/ui/fan.dart">View code</a> of Fan.<br/>
 7. <a href="https://github.com/thetahmeed/FlutterUIChallange/blob/main/apple/lib/ui/garden.dart">View code</a> of Garden.<br/>
+
+
+<br/>
+Design credit:
+Apple : <a href="https://www.youtube.com/channel/UC8fLLqVbNQL_cDdldEDuM4A/featured">Shadowtech bangla</a>
+Ball : <a href="https://www.youtube.com/channel/UC8fLLqVbNQL_cDdldEDuM4A/featured">Shadowtech bangla</a>
+Cat : <a href="https://www.youtube.com/channel/UC8fLLqVbNQL_cDdldEDuM4A/featured">Shadowtech bangla</a> + modified
+Dog : <a href="https://www.youtube.com/channel/UC8fLLqVbNQL_cDdldEDuM4A/featured">Shadowtech bangla</a> + modified
+Egg : <a href="https://www.youtube.com/channel/UC8fLLqVbNQL_cDdldEDuM4A/featured">Shadowtech bangla</a> + modified
+Fan : <a href="https://www.youtube.com/c/TrendingCodes/featured">Trending Codes</a> + modified
+Garden : <a href="https://www.youtube.com/channel/UCJm7i4g4z7ZGcJA_HKHLCVw">The Flutter Way</a> + modified
