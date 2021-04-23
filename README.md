@@ -33,11 +33,11 @@ View the code:
 
 <br/>
 <br/>
-Design credit:
+Design credit:<br/>
 1. Apple : <a href="https://www.youtube.com/channel/UC8fLLqVbNQL_cDdldEDuM4A/featured">Shadowtech bangla</a><br/>
 2. Ball : <a href="https://www.youtube.com/channel/UC8fLLqVbNQL_cDdldEDuM4A/featured">Shadowtech bangla</a><br/>
 3. Cat : <a href="https://www.youtube.com/channel/UC8fLLqVbNQL_cDdldEDuM4A/featured">Shadowtech bangla</a> + modification<br/>
 4. Dog : <a href="https://www.youtube.com/channel/UC8fLLqVbNQL_cDdldEDuM4A/featured">Shadowtech bangla</a> + modification<br/>
 5. Egg : <a href="https://www.youtube.com/channel/UC8fLLqVbNQL_cDdldEDuM4A/featured">Shadowtech bangla</a> + modification<br/>
-6. Fan : <a href="https://www.youtube.com/c/TrendingCodes/featured">Trending Codes</a> + modified<br/>
+6. Fan : <a href="https://www.youtube.com/c/TrendingCodes/featured">Trending Codes</a> + modification<br/>
 7. Garden : <a href="https://www.youtube.com/channel/UCJm7i4g4z7ZGcJA_HKHLCVw">The Flutter Way</a> + modification<br/>
