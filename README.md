@@ -20,8 +20,9 @@ Garden:
 <img src="https://github.com/thetahmeed/FlutterUIChallange/blob/main/apple/garden_a.png" height="400">
 <img src="https://github.com/thetahmeed/FlutterUIChallange/blob/main/apple/garden_b.png" height="400">
 
-
 <br/>
+<br/>
+View the code:
 1. <a href="https://github.com/thetahmeed/FlutterUIChallange/blob/9933ab2871e16d0f1af933533fe612422681b589/apple/lib/ui/apple.dart">View code</a> of Apple.<br/>
 2. <a href="https://github.com/thetahmeed/FlutterUIChallange/blob/9933ab2871e16d0f1af933533fe612422681b589/apple/lib/ui/ball.dart">View code</a> of Ball.<br/>
 3. <a href="https://github.com/thetahmeed/FlutterUIChallange/blob/9933ab2871e16d0f1af933533fe612422681b589/apple/lib/ui/cat.dart">View code</a> od Cat<br/>
@@ -30,13 +31,13 @@ Garden:
 6. <a href="https://github.com/thetahmeed/FlutterUIChallange/blob/main/apple/lib/ui/fan.dart">View code</a> of Fan.<br/>
 7. <a href="https://github.com/thetahmeed/FlutterUIChallange/blob/main/apple/lib/ui/garden.dart">View code</a> of Garden.<br/>
 
-
+<br/>
 <br/>
 Design credit:
-Apple : <a href="https://www.youtube.com/channel/UC8fLLqVbNQL_cDdldEDuM4A/featured">Shadowtech bangla</a>
-Ball : <a href="https://www.youtube.com/channel/UC8fLLqVbNQL_cDdldEDuM4A/featured">Shadowtech bangla</a>
-Cat : <a href="https://www.youtube.com/channel/UC8fLLqVbNQL_cDdldEDuM4A/featured">Shadowtech bangla</a> + modified
-Dog : <a href="https://www.youtube.com/channel/UC8fLLqVbNQL_cDdldEDuM4A/featured">Shadowtech bangla</a> + modified
-Egg : <a href="https://www.youtube.com/channel/UC8fLLqVbNQL_cDdldEDuM4A/featured">Shadowtech bangla</a> + modified
-Fan : <a href="https://www.youtube.com/c/TrendingCodes/featured">Trending Codes</a> + modified
-Garden : <a href="https://www.youtube.com/channel/UCJm7i4g4z7ZGcJA_HKHLCVw">The Flutter Way</a> + modified
+Apple : <a href="https://www.youtube.com/channel/UC8fLLqVbNQL_cDdldEDuM4A/featured">Shadowtech bangla</a><br/>
+Ball : <a href="https://www.youtube.com/channel/UC8fLLqVbNQL_cDdldEDuM4A/featured">Shadowtech bangla</a><br/>
+Cat : <a href="https://www.youtube.com/channel/UC8fLLqVbNQL_cDdldEDuM4A/featured">Shadowtech bangla</a> + modified<br/>
+Dog : <a href="https://www.youtube.com/channel/UC8fLLqVbNQL_cDdldEDuM4A/featured">Shadowtech bangla</a> + modified<br/>
+Egg : <a href="https://www.youtube.com/channel/UC8fLLqVbNQL_cDdldEDuM4A/featured">Shadowtech bangla</a> + modified<br/>
+Fan : <a href="https://www.youtube.com/c/TrendingCodes/featured">Trending Codes</a> + modified<br/>
+Garden : <a href="https://www.youtube.com/channel/UCJm7i4g4z7ZGcJA_HKHLCVw">The Flutter Way</a> + modified<br/>
