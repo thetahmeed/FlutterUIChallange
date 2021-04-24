@@ -6,6 +6,7 @@ import 'package:apple/ui/dog.dart';
 import 'package:apple/ui/egg.dart';
 import 'package:apple/ui/fan.dart';
 import 'package:apple/ui/garden.dart';
+import 'package:apple/ui/home.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -18,6 +19,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
+      /*
       theme: ThemeData(
         textTheme: Theme.of(context).textTheme.apply(
               bodyColor: cTextColor,
@@ -25,14 +27,15 @@ class MyApp extends StatelessWidget {
         iconTheme: IconThemeData(
           color: Colors.grey[700],
         ),
-      ),
+      ),*/
       // home: HomePage(), // AKA ApplePage
       // home: BallPage(),
       // home: CatPage(),
       // home: DogPage(),
       // home: EggPage(),
       //home: FanPage(),
-      home: GardenPage(),
+      //home: GardenPage(),
+      home: HornPage(),
 
       debugShowCheckedModeBanner: false,
     );
