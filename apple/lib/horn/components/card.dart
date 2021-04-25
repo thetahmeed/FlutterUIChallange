@@ -1,3 +1,4 @@
+import 'package:apple/horn/details.dart';
 import 'package:apple/horn/model/Books.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_swiper/flutter_swiper.dart';
@@ -52,7 +53,7 @@ class theCard extends StatelessWidget {
                             allBooks[index].name,
                             style: TextStyle(
                               fontFamily: 'Avenir',
-                              fontSize: 44,
+                              fontSize: 40,
                               color: const Color(0xff47455f),
                               fontWeight: FontWeight.w900,
                             ),
@@ -72,17 +73,32 @@ class theCard extends StatelessWidget {
                           Row(
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
-                              Text(
-                                'Know more',
-                                style: TextStyle(
-                                  fontFamily: 'Avenir',
-                                  fontSize: 18,
-                                  color: gradientEndColor,
-                                  fontWeight: FontWeight.w500,
+                              InkWell(
+                                onTap: () {
+                                  Navigator.push(
+                                    context,
+                                    PageRouteBuilder(
+                                      pageBuilder: (context, startAnimation,
+                                              endAnimation) =>
+                                          BooksDetails(
+                                        books: allBooks[index],
+                                      ),
+                                    ),
+                                  );
+                                },
+                                child: Text(
+                                  'Know more',
+                                  style: TextStyle(
+                                    fontFamily: 'Avenir',
+                                    fontSize: 18,
+                                    color: gradientEndColor,
+                                    fontWeight: FontWeight.w500,
+                                  ),
+                                  textAlign: TextAlign.left,
                                 ),
-                                textAlign: TextAlign.left,
                               ),
-                              Icon(Icons.arrow_right_rounded, color: gradientEndColor),
+                              Icon(Icons.arrow_right_rounded,
+                                  color: gradientEndColor),
                             ],
                           )
                         ],
@@ -94,7 +110,9 @@ class theCard extends StatelessWidget {
               Positioned(
                 right: 10,
                 top: -65,
-                child: Image.network(allBooks[index].image, height: 250),
+                child: Hero(
+                    tag: allBooks[index].position,
+                    child: Image.network(allBooks[index].image, height: 250)),
               ),
             ],
           );
