@@ -10,11 +10,45 @@ class BooksDetails extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       body: SafeArea(
-        child: Stack(
-          children: [
-            SingleChildScrollView(
-              physics: BouncingScrollPhysics(),
+        child: CustomScrollView(
+          physics: BouncingScrollPhysics(),
+          slivers: [
+            SliverAppBar(
+              leading: IconButton(
+                icon: Icon(
+                  Icons.arrow_back_ios_rounded,
+                  color: Color(0xff47455f),
+                ),
+                onPressed: () {
+                  Navigator.pop(context);
+                },
+              ),
+              backgroundColor: Colors.white10,
+              //title: Text('Sliver Appbar'),
+              expandedHeight: 340,
+              stretch: true,
+              pinned: false,
+              snap: false,
+              floating: false,
+              flexibleSpace: FlexibleSpaceBar(
+                //title: Text('Title'),
+                background: Hero(
+                  tag: books.position,
+                  child: Image.network(
+                    books.image,
+                    //height: 330,
+                  ),
+                ),
+                stretchModes: [
+                  StretchMode.blurBackground,
+                  StretchMode.zoomBackground,
+                  StretchMode.fadeTitle
+                ],
+              ),
+            ),
+            SliverToBoxAdapter(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -23,7 +57,6 @@ class BooksDetails extends StatelessWidget {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        SizedBox(height: 300),
                         Text(
                           books.name,
                           style: TextStyle(
@@ -59,14 +92,15 @@ class BooksDetails extends StatelessWidget {
                         SizedBox(height: 10),
                         Text(
                           books.description ?? '', // to avoid null value
-                          maxLines: 5,
-                          overflow: TextOverflow.ellipsis,
+                          //maxLines: 7,
+                          //overflow: TextOverflow.ellipsis,
                           style: TextStyle(
                             fontFamily: 'Avenir',
                             fontSize: 20,
                             color: contentTextColor,
                             //fontWeight: FontWeight.w500,
                           ),
+                          textAlign: TextAlign.justify,
                         ),
                       ],
                     ),
@@ -114,25 +148,6 @@ class BooksDetails extends StatelessWidget {
                   ),
                   SizedBox(height: 30),
                 ],
-              ),
-            ),
-            Positioned(
-              right: 0,
-              child: Hero(
-                tag: books.position,
-                child: Image.network(
-                  books.image,
-                  height: 330,
-                ),
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: IconButton(
-                icon: Icon(Icons.arrow_back_ios_rounded),
-                onPressed: () {
-                  Navigator.pop(context);
-                },
               ),
             ),
           ],
