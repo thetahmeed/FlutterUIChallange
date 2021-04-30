@@ -7,7 +7,7 @@ class Product {
 
 // List of products
 
-List<Product> _inkProductList = [
+List<Product> inkProductList = [
   Product(
     id: 1,
     price: 22000,
