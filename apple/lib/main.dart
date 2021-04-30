@@ -1,3 +1,4 @@
+import 'package:apple/inkfiles/constants.dart';
 import 'package:apple/ui/apple.dart';
 import 'package:apple/ui/ball.dart';
 import 'package:apple/ui/cat.dart';
@@ -7,7 +8,9 @@ import 'package:apple/ui/egg.dart';
 import 'package:apple/ui/fan.dart';
 import 'package:apple/ui/garden.dart';
 import 'package:apple/ui/home.dart';
+import 'package:apple/ui/ink.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   runApp(MyApp());
@@ -19,6 +22,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
+      theme: ThemeData(
+        textTheme: GoogleFonts.poppinsTextTheme(Theme.of(context).textTheme),
+        primaryColor: cPrimaryColor,
+        accentColor: cPrimaryColor,
+        visualDensity: VisualDensity.adaptivePlatformDensity,
+      ),
       /*
       theme: ThemeData(
         textTheme: Theme.of(context).textTheme.apply(
@@ -35,7 +44,8 @@ class MyApp extends StatelessWidget {
       // home: EggPage(),
       //home: FanPage(),
       //home: GardenPage(),
-      home: HornPage(),
+      //home: HornPage(),
+      home: Inkpage(),
 
       debugShowCheckedModeBanner: false,
     );
