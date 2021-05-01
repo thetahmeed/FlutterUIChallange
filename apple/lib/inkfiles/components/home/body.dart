@@ -1,3 +1,4 @@
+import 'package:apple/inkfiles/components/details/details_screen.dart';
 import 'package:apple/inkfiles/components/home/categories.dart';
 import 'package:apple/inkfiles/components/home/search_box.dart';
 import 'package:apple/inkfiles/components/home/single_product.dart';
@@ -34,7 +35,16 @@ class InkBody extends StatelessWidget {
                   itemBuilder: (context, index) => singleProduct(
                     index: index,
                     product: inkProductList[index],
-                    press: () {},
+                    press: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => DetailsPage(
+                            product: inkProductList[index],
+                          ),
+                        ),
+                      );
+                    },
                   ),
                 )
               ],
