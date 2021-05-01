@@ -51,9 +51,12 @@ class singleProduct extends StatelessWidget {
                 padding: EdgeInsets.symmetric(horizontal: cDefaultPadding),
                 height: 160,
                 width: 200,
-                child: Image.asset(
-                  product.image,
-                  fit: BoxFit.contain,
+                child: Hero(
+                  tag: '${product.id}',
+                  child: Image.asset(
+                    product.image,
+                    fit: BoxFit.contain,
+                  ),
                 ),
               ),
             ),
