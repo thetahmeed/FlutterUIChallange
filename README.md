@@ -23,8 +23,8 @@ Horn:
 <img src="https://github.com/thetahmeed/FlutterUIChallange/blob/main/apple/horn_a.png" height="400">
 <img src="https://github.com/thetahmeed/FlutterUIChallange/blob/main/apple/horn_b.png" height="400">
 Ink: 
-<img src="https://github.com/thetahmeed/FlutterUIChallange/blob/main/apple/ink_a.png?raw=true" height="400">
-<img src="https://github.com/thetahmeed/FlutterUIChallange/blob/main/apple/ink_b.png?raw=true" height="400">
+<img src="https://github.com/thetahmeed/FlutterUIChallange/blob/main/apple/ink_a.png" height="400">
+<img src="https://github.com/thetahmeed/FlutterUIChallange/blob/main/apple/ink_b.png" height="400">
 
 
 
