@@ -1,4 +1,5 @@
 import 'package:apple/inkfiles/constants.dart';
+import 'package:apple/jupiter/ui/HomePage/ui/HomePage.dart';
 import 'package:apple/ui/apple.dart';
 import 'package:apple/ui/ball.dart';
 import 'package:apple/ui/cat.dart';
@@ -42,10 +43,11 @@ class MyApp extends StatelessWidget {
       // home: CatPage(),
       // home: DogPage(),
       // home: EggPage(),
-      //home: FanPage(),
-      //home: GardenPage(),
-      //home: HornPage(),
-      home: Inkpage(),
+      // home: FanPage(),
+      // home: GardenPage(),
+      // home: HornPage(),
+      // home: Inkpage(),
+      home: JupitarPage(),
 
       debugShowCheckedModeBanner: false,
     );
