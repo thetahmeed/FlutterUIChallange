@@ -35,8 +35,7 @@ List<Car> carList = [
   ),
   Car(
     3,
-    img:
-        'https://png2.cleanpng.com/sh/dc74a4f0b7b2df49804a4fee86ff8dab/L0KzQYm3U8MxN6VrfZH0aYP2gLBuTgRwgZD5eZ9xaXz4iH7qggIufJDAhAZqLXzkfrW0gCJ2caRqip95cnHnf377jClwfJIyjtN3LUXkcrXqhcczOJU7faY6LkC2Q4aBVMQ0OWY3SqUDOEW8RIG8Vb5xdpg=/kisspng-toyota-hilux-car-toyota-land-cruiser-prado-toyota-van-5abdce720d6e41.033584431522388594055.png',
+    img: 'https://pngimg.com/uploads/toyota/toyota_PNG1952.png',
     title: 'Hiace',
     description: 'Looking for a 10 seater?',
     phone: '01700547406',
@@ -44,8 +43,7 @@ List<Car> carList = [
   ),
   Car(
     4,
-    img:
-        'https://png2.cleanpng.com/sh/cc95d408c2ae739c47c8e3f8f9599658/L0KzQYm3VME5N6ZniZH0aYP2gLBuTgRwgZD5eZ9xaXHmdX7qggIufpJzReZ4eXB3cX7qgf1zgV55hAt4dHGwRbLrVvRmOJI8fNU5ZEexRoK7WcQ5P2Q2TaQ9MEOzSYm9VcE2OV91htk=/kisspng-toyota-hiace-car-van-toyota-camry-toyota-5ad6de0a7dc0d7.6149487315240309865151.png',
+    img: 'https://pngimg.com/uploads/toyota/toyota_PNG1952.png',
     title: 'Hice Grand Cabin',
     description: 'Looking for a 14 seater?',
     phone: '01700547406',
