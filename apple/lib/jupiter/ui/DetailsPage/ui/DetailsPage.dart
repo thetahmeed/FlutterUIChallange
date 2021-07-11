@@ -3,9 +3,14 @@ import 'package:apple/jupiter/url_launcer/url_launcher.dart';
 import 'package:flutter/material.dart';
 
 class DetailsPage extends StatelessWidget {
+class DetailsPage extends StatefulWidget {
   const DetailsPage({Key key, this.car}) : super(key: key);
 
   final Car car;
+
+  @override
+  _DetailsPageState createState() => _DetailsPageState();
+}
 
   @override
   Widget build(BuildContext context) {
