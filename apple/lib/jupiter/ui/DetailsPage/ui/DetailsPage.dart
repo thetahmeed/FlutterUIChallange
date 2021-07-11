@@ -12,6 +12,7 @@ class DetailsPage extends StatefulWidget {
   _DetailsPageState createState() => _DetailsPageState();
 }
 
+bool showFullText = false;
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
@@ -50,11 +51,40 @@ class DetailsPage extends StatefulWidget {
                           SizedBox(height: 130),
                           Text(
                             car.title.toUpperCase(),
+                            widget.car.description
+                                .replaceAll('Looking for a ', '')
+                                .replaceAll('?', ' car'),
                             style: TextStyle(
                               fontSize: 24,
                               fontWeight: FontWeight.w700,
+                              fontSize: 20,
+                              fontWeight: FontWeight.w300,
                             ),
                           ),
+                          Divider(),
+                          showFullText
+                              ? Text(
+                                  longDescription,
+                                  textAlign: TextAlign.justify,
+                                )
+                              : Text(
+                                  longDescription,
+                                  textAlign: TextAlign.justify,
+                                  maxLines: 7,
+                                  overflow: TextOverflow.ellipsis,
+                                ),
+                          GestureDetector(
+                            onTap: () {
+                              setState(() {
+                                showFullText = !showFullText;
+                              });
+                            },
+                            child: Text(
+                              showFullText ? 'See less' : 'See more',
+                              style: TextStyle(color: Colors.blue.shade700),
+                            ),
+                          ),
+                          Divider(),
                           Text(
                             car.description
                                 .replaceAll('Looking for a ', '')
