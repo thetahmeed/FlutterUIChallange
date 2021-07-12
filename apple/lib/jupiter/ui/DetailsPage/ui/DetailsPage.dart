@@ -13,6 +13,8 @@ class DetailsPage extends StatefulWidget {
 }
 
 bool showFullText = false;
+  DateTime selectedDate1 = DateTime.now();
+  DateTime selectedDate2 = DateTime.now();
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
@@ -23,6 +25,28 @@ bool showFullText = false;
         '''Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare lacus et arcu bibendum, ac ornare sapien blandit. In hac habitasse platea dictumst. Nam in semper velit. Sed finibus convallis dui, et porta elit lobortis a. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut ut facilisis orci. Cras nisi urna, pulvinar nec turpis vel, posuere pellentesque dui.
           \nUt hendrerit ipsum arcu, sed rhoncus neque ultrices ac. Aenean ornare orci neque, a venenatis velit rhoncus sed. Morbi sit amet justo quis dolor rutrum volutpat hendrerit et risus. Nunc ac hendrerit libero, id volutpat felis. Cras ac massa ligula. Nullam malesuada ligula et ipsum gravida dapibus. Suspendisse quis vehicula erat. Quisque leo velit, mollis nec pretium non, feugiat ac eros. Aenean vel elementum libero, ac lacinia diam.''';
 
+    Future<void> _selectDate1(BuildContext context) async {
+      final DateTime picked = await showDatePicker(
+          context: context,
+          initialDate: selectedDate1,
+          firstDate: DateTime(2015, 8),
+          lastDate: DateTime(2101));
+      if (picked != null && picked != selectedDate1)
+        setState(() {
+          selectedDate1 = picked;
+        });
+    }
+    Future<void> _selectDate2(BuildContext context) async {
+      final DateTime picked = await showDatePicker(
+          context: context,
+          initialDate: selectedDate2,
+          firstDate: DateTime(2015, 8),
+          lastDate: DateTime(2101));
+      if (picked != null && picked != selectedDate2)
+        setState(() {
+          selectedDate2 = picked;
+        });
+    }
     return Scaffold(
       body: SafeArea(
         child: Stack(
