@@ -15,6 +15,7 @@ class DetailsPage extends StatefulWidget {
 bool showFullText = false;
   DateTime selectedDate1 = DateTime.now();
   DateTime selectedDate2 = DateTime.now();
+  TimeOfDay selectedTime = TimeOfDay.now();
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
@@ -47,6 +48,15 @@ bool showFullText = false;
           selectedDate2 = picked;
         });
     }
+    Future<void> _selectTime(BuildContext context) async {
+      final TimeOfDay picked =
+          await showTimePicker(context: context, initialTime: TimeOfDay.now());
+      if (picked != null && picked != selectedTime)
+        setState(() {
+          selectedTime = picked.replacing(hour: picked.hourOfPeriod);
+        });
+    }
+
     return Scaffold(
       body: SafeArea(
         child: Stack(
