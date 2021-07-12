@@ -49,6 +49,38 @@ bool showFullText = false;
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           SizedBox(height: 130),
+                          Row(
+                            children: [
+                              Text(
+                                widget.car.title.toUpperCase(),
+                                style: TextStyle(
+                                  fontSize: 24,
+                                  fontWeight: FontWeight.w700,
+                                ),
+                              ),
+                              Spacer(),
+                              IconButton(
+                                onPressed: () {
+                                  UrlLauncher()
+                                      .makePhoneCall('tel:01700547406');
+                                },
+                                icon: Icon(
+                                  Icons.call_rounded,
+                                  color: Colors.blue.shade700,
+                                ),
+                              ),
+                              IconButton(
+                                onPressed: () {
+                                  UrlLauncher()
+                                      .makePhoneCall('sms:01700547406');
+                                },
+                                icon: Icon(
+                                  Icons.message_rounded,
+                                  color: Colors.blue.shade700,
+                                ),
+                              )
+                            ],
+                          ),
                           Text(
                             car.title.toUpperCase(),
                             widget.car.description
