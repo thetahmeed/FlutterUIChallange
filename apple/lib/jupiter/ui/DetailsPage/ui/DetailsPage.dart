@@ -16,6 +16,7 @@ bool showFullText = false;
   DateTime selectedDate1 = DateTime.now();
   DateTime selectedDate2 = DateTime.now();
   TimeOfDay selectedTime = TimeOfDay.now();
+  String amPm = 'am';
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
@@ -54,6 +55,10 @@ bool showFullText = false;
       if (picked != null && picked != selectedTime)
         setState(() {
           selectedTime = picked.replacing(hour: picked.hourOfPeriod);
+          if (selectedTime.period == DayPeriod.am)
+            amPm = 'am';
+          else
+            amPm = 'pm';
         });
     }
 
