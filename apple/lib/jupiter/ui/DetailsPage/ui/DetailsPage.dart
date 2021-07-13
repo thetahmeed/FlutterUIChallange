@@ -240,6 +240,77 @@ bool showFullText = false;
                             ),
                           ),
                           Divider(),
+                          Text(
+                            'Select pick-up point:',
+                            style: TextStyle(
+                              fontSize: 20,
+                              fontWeight: FontWeight.w300,
+                            ),
+                          ),
+                          SizedBox(height: 8),
+                          SingleChildScrollView(
+                            scrollDirection: Axis.horizontal,
+                            child: Row(
+                              children: [
+                                GestureDetector(
+                                  onTap: () {},
+                                  child: Container(
+                                    padding: EdgeInsets.all(8),
+                                    child: Row(
+                                      children: [
+                                        Icon(
+                                          Icons.my_location_outlined,
+                                          color: Colors.white,
+                                        ),
+                                        SizedBox(width: 4),
+                                        Text(
+                                          'Current location',
+                                          style: TextStyle(
+                                            color: Colors.white,
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(12),
+                                      color: Colors.blue.shade800,
+                                    ),
+                                  ),
+                                ),
+                                SizedBox(width: 8),
+                                GestureDetector(
+                                  onTap: () {},
+                                  child: Container(
+                                    padding: EdgeInsets.all(8),
+                                    child: Row(
+                                      children: [
+                                        Icon(
+                                          Icons.location_on_outlined,
+                                          color: Colors.blue.shade800,
+                                        ),
+                                        SizedBox(width: 4),
+                                        Text(
+                                          'Custom pick-up point',
+                                          style: TextStyle(
+                                            color: Colors.blue.shade800,
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                    decoration: BoxDecoration(
+                                      border: Border.all(
+                                        color: Colors.blueAccent,
+                                      ),
+                                      borderRadius: BorderRadius.circular(12),
+                                      //color: Colors.blue.shade800,
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                          Divider(),
+                          SizedBox(height: 10),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
