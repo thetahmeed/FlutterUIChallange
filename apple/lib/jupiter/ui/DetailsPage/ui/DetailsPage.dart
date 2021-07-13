@@ -210,6 +210,35 @@ bool showFullText = false;
                           ),
                           Divider(),
                           Text(longDescription),
+                          Text(
+                            'Select pick-up time:',
+                            style: TextStyle(
+                              fontSize: 20,
+                              fontWeight: FontWeight.w300,
+                            ),
+                          ),
+                          SizedBox(height: 8),
+                          GestureDetector(
+                            onTap: () {
+                              setState(() {
+                                _selectTime(context);
+                              });
+                            },
+                            child: Container(
+                              padding: EdgeInsets.all(8),
+                              child: Text(
+                                "${selectedTime.hour.toString().padLeft(2, '0')}:${selectedTime.minute.toString().padLeft(2, '0')} " +
+                                    amPm,
+                                style: TextStyle(
+                                  color: Colors.white,
+                                ),
+                              ),
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(12),
+                                color: Colors.blue.shade800,
+                              ),
+                            ),
+                          ),
                           Divider(),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.center,
