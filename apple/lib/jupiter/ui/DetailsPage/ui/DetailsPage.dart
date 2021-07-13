@@ -160,10 +160,53 @@ bool showFullText = false;
                             car.description
                                 .replaceAll('Looking for a ', '')
                                 .replaceAll('?', ' car'),
+                            'Select date:',
                             style: TextStyle(
                               fontSize: 20,
                               fontWeight: FontWeight.w300,
                             ),
+                          ),
+                          SizedBox(height: 8),
+                          Row(
+                            children: [
+                              GestureDetector(
+                                onTap: () {
+                                  _selectDate1(context);
+                                },
+                                child: Container(
+                                  padding: EdgeInsets.all(8),
+                                  child: Text(
+                                    "${selectedDate1.day.toString().padLeft(2, '0')}/${selectedDate1.month.toString().padLeft(2, '0')}/${selectedDate1.year.toString()}",
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                    ),
+                                  ),
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(12),
+                                    color: Colors.blue.shade800,
+                                  ),
+                                ),
+                              ),
+                              Text(' - '),
+                              GestureDetector(
+                                onTap: () {
+                                  _selectDate2(context);
+                                },
+                                child: Container(
+                                  padding: EdgeInsets.all(8),
+                                  child: Text(
+                                    "${selectedDate2.day.toString().padLeft(2, '0')}/${selectedDate2.month.toString().padLeft(2, '0')}/${selectedDate2.year.toString()}",
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                    ),
+                                  ),
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(12),
+                                    color: Colors.blue.shade800,
+                                  ),
+                                ),
+                              ),
+                            ],
                           ),
                           Divider(),
                           Text(longDescription),
