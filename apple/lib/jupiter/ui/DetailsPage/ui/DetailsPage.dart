@@ -1,8 +1,9 @@
+import 'dart:ui';
+
 import 'package:apple/jupiter/model/Car.dart';
 import 'package:apple/jupiter/url_launcer/url_launcher.dart';
 import 'package:flutter/material.dart';
 
-class DetailsPage extends StatelessWidget {
 class DetailsPage extends StatefulWidget {
   const DetailsPage({Key key, this.car}) : super(key: key);
 
@@ -13,10 +14,13 @@ class DetailsPage extends StatefulWidget {
 }
 
 bool showFullText = false;
+
+class _DetailsPageState extends State<DetailsPage> {
   DateTime selectedDate1 = DateTime.now();
   DateTime selectedDate2 = DateTime.now();
   TimeOfDay selectedTime = TimeOfDay.now();
   String amPm = 'am';
+
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
@@ -38,6 +42,7 @@ bool showFullText = false;
           selectedDate1 = picked;
         });
     }
+
     Future<void> _selectDate2(BuildContext context) async {
       final DateTime picked = await showDatePicker(
           context: context,
@@ -49,6 +54,7 @@ bool showFullText = false;
           selectedDate2 = picked;
         });
     }
+
     Future<void> _selectTime(BuildContext context) async {
       final TimeOfDay picked =
           await showTimePicker(context: context, initialTime: TimeOfDay.now());
@@ -121,13 +127,10 @@ bool showFullText = false;
                             ],
                           ),
                           Text(
-                            car.title.toUpperCase(),
                             widget.car.description
                                 .replaceAll('Looking for a ', '')
                                 .replaceAll('?', ' car'),
                             style: TextStyle(
-                              fontSize: 24,
-                              fontWeight: FontWeight.w700,
                               fontSize: 20,
                               fontWeight: FontWeight.w300,
                             ),
@@ -157,9 +160,6 @@ bool showFullText = false;
                           ),
                           Divider(),
                           Text(
-                            car.description
-                                .replaceAll('Looking for a ', '')
-                                .replaceAll('?', ' car'),
                             'Select date:',
                             style: TextStyle(
                               fontSize: 20,
@@ -209,7 +209,6 @@ bool showFullText = false;
                             ],
                           ),
                           Divider(),
-                          Text(longDescription),
                           Text(
                             'Select pick-up time:',
                             style: TextStyle(
@@ -315,26 +314,17 @@ bool showFullText = false;
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               FloatingActionButton.extended(
-                                heroTag: 'fab1',
-                                icon: Icon(Icons.call_rounded),
+                                heroTag: 'fab0',
+                                icon: Icon(Icons.confirmation_num_outlined),
                                 onPressed: () {
                                   UrlLauncher()
                                       .makePhoneCall('tel:01700547406');
                                 },
-                                label: Text('Call'),
+                                label: Text('Book now'),
                               ),
-                              SizedBox(width: 6),
-                              FloatingActionButton.extended(
-                                heroTag: 'fab2',
-                                icon: Icon(Icons.message_rounded),
-                                onPressed: () {
-                                  UrlLauncher()
-                                      .makePhoneCall('sms:01700547406');
-                                },
-                                label: Text('Message'),
-                              )
                             ],
                           ),
+                          SizedBox(height: 10),
                         ],
                       ),
                     ),
@@ -343,9 +333,9 @@ bool showFullText = false;
               ),
             ),
             Hero(
-              tag: 'img${car.position}',
+              tag: 'img${widget.car.position}',
               child: Image.network(
-                car.img,
+                widget.car.img,
                 width: isPortrait ? size.width - 10 : 400,
               ),
             ),
