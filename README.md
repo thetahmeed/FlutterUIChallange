@@ -44,7 +44,7 @@ Jupitar:
 7. <a href="https://github.com/thetahmeed/FlutterUIChallange/blob/main/apple/lib/ui/garden.dart">View code</a> of Garden.<br/>
 8. <a href="https://github.com/thetahmeed/FlutterUIChallange/blob/main/apple/lib/ui/home.dart">View code</a> of Horn.<br/>
 9. <a href="https://github.com/thetahmeed/FlutterUIChallange/tree/main/apple/lib/inkfiles">View code</a> of Ink.<br/>
-10. <a href="https://github.com/thetahmeed/FlutterUIChallange/tree/main/apple/lib/jupitar">View code</a> of Jupitar.<br/>
+10. <a href="https://github.com/thetahmeed/FlutterUIChallange/tree/main/apple/lib/jupiter">View code</a> of Jupitar.<br/>
 
 <br/>
 <br/>
