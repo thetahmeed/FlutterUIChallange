@@ -28,6 +28,11 @@ Ink:
 Jupitar:
 <img src="https://github.com/thetahmeed/FlutterUIChallange/blob/main/apple/jupitar_a.png" height="400">
 <img src="https://github.com/thetahmeed/FlutterUIChallange/blob/main/apple/jupitar_b.png" height="400">
+Kite:
+<img src="https://raw.githubusercontent.com/thetahmeed/FoodSellingAppWithFlutter/main/food_selling_app/flutter_01.png" height="400"/>
+<img src="https://raw.githubusercontent.com/thetahmeed/FoodSellingAppWithFlutter/main/food_selling_app/flutter_02.png" height="400"/>
+<img src="https://raw.githubusercontent.com/thetahmeed/FoodSellingAppWithFlutter/main/food_selling_app/flutter_03.png" height="400"/>
+
 
 
 
@@ -45,6 +50,7 @@ Jupitar:
 8. <a href="https://github.com/thetahmeed/FlutterUIChallange/blob/main/apple/lib/ui/home.dart">View code</a> of Horn.<br/>
 9. <a href="https://github.com/thetahmeed/FlutterUIChallange/tree/main/apple/lib/inkfiles">View code</a> of Ink.<br/>
 10. <a href="https://github.com/thetahmeed/FlutterUIChallange/tree/main/apple/lib/jupiter">View code</a> of Jupitar.<br/>
+11. <a href="https://github.com/thetahmeed/FoodSellingAppWithFlutter/tree/main/food_selling_app/lib">View code</a> of Kite.<br/>
 
 <br/>
 <br/>
@@ -59,3 +65,4 @@ Jupitar:
 8. Horn : <a href="https://dribbble.com/shots/6600859-Explore-Universe-App-UI">vijay verma</a> + modification<br/>
 9. Ink : <a href="https://www.youtube.com/channel/UCJm7i4g4z7ZGcJA_HKHLCVw">The Flutter Way</a> + modification<br/>
 10. Jupitar : <a href="https://m.me/tahmeedslab">Tahmeed's Lab</a><br/>
+11. Kite : <a href="https://m.me/tahmeedslab">View on figma</a><br/>
